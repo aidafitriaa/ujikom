@@ -29,7 +29,7 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']],function() {
     Route::get('/', function(){
         return view('admin.index');
     });
-});
+
 
 Route::resource('pembeli','PembeliController');
 Route::resource('mobil','MobilController');
@@ -37,3 +37,4 @@ Route::resource('cash','CashController');
 Route::resource('kredit','KreditController');
 Route::resource('paket_kredit','PaketkreditController');
 Route::resource('cicilan','BayarcicilanController');
+});

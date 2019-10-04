@@ -48,7 +48,7 @@ class MobilController extends Controller
         //     'harga_mobil' => 'required|min:50',
         //     'gambar' => 'required|mimes:jpeg,jpg,png,gif|max:2048',
         // ]);
-        $mobil = mobil::findOrFail($id);
+        $mobil = new mobil();
         $mobil->kode_mobil = $request->kode_mobil;
         $mobil->merk = $request->merk;
         $mobil->type = $request->type;
