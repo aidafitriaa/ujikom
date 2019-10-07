@@ -1,4 +1,4 @@
-{{-- @extends('layouts.app')
+ @extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -19,9 +19,9 @@
         </div>
     </div>
 </div>
-@endsection --}}
+@endsection 
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Autoroad - Free Bootstrap 4 Template by Colorlib</title>
@@ -266,8 +266,8 @@
                 <p>A small river named Duden flows by their place and supplies it with you</p>
               </div>
             </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+          </div> --}}
+          {{-- <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
               <div class="media-body py-md-4">
               	<div class="d-flex mb-3 align-items-center">
@@ -444,8 +444,8 @@
     						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
     						<span>Mercedes</span>
     						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
+    					</div> --}}
+    				{{-- </div>
     			</div>
     		</div>
     	</div>
@@ -737,4 +737,4 @@
   <script src="{{asset('assets/frontend/js/main.js')}}"></script>
     
   </body>
-</html>
+</html> 

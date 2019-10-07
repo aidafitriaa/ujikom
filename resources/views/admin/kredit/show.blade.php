@@ -91,7 +91,7 @@
                             </div>
                             <div>
                                     <div class="form-group">
-                                        <a href="{{url('/kredit')}}" class="btn btn-outline-info">Kembali</a>
+                                        <a href="{{url('/admin/kredit')}}" class="btn btn-outline-info">Kembali</a>
                                     </div>
                             </div>
                         </form>

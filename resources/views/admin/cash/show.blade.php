@@ -66,34 +66,34 @@
                     </center>
     
                     <div class="card-body">
-                        <form action="{{route('cash.show', $cash->id)}}" method="POST">
-                            <input type="hidden" name="_method" value="PATCH">
-                            {{csrf_field()}}
-                            <div class="form-group">
-                                <label for="">Kode Cash</label>
-                                <input class="form-control" value="{{$cash->kode_cash}}" type="text" name="kode_cash"disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="">KTP</label>
-                                <input class="form-control" value="{{$cash->KTP}}"type="text" name="KTP"disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Id Mobil</label>
-                                <input class="form-control" value="{{$cash->moblis_id}}"type="text" name="moblis_id"disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Tanggal Cash</label>
-                                <input class="form-control" value="{{$cash->cash_tgl}}"type="date" name="cash_tgl"disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Bayar Cash</label>
-                                <input class="form-control" value="{{$cash->cash_bayar}}"type="text" name="cash_bayar"disabled>
-                            </div>
-                            <div>
-                                <div class="form-group">
-                                    <a href="{{url('/cash')}}" class="btn btn-outline-info">Kembali</a>
-                                </div>
-                        </form>
+                                                <div class="card-body">
+                                                    <form action="{{route('cash.show', $cash->id)}}" method="POST">
+                                                        <input type="hidden" name="_method" value="PATCH">
+                                                        {{csrf_field()}}
+                                                        <div class="form-group">
+                                                            <label for="">Kode Cash</label>
+                                                            <input class="form-control" value="{{$cash->kode_cash}}" type="text" name="kode_cash"disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">KTP</label>
+                                                            <input class="form-control" value="{{$cash->KTP}}"type="text" name="KTP"disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Id Mobil</label>
+                                                            <input class="form-control" value="{{$cash->moblis_id}}"type="text" name="moblis_id"disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Tanggal Cash</label>
+                                                            <input class="form-control" value="{{$cash->cash_tgl}}"type="date" name="cash_tgl"disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Bayar Cash</label>
+                                                            <input class="form-control" value="{{$cash->cash_bayar}}"type="text" name="cash_bayar"disabled>
+                                                        </div>
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <a href="{{url('/admin/cash')}}" class="btn btn-outline-info">Kembali</a>
+                                                            </div>
                     </div>
                 </div>
             </div>

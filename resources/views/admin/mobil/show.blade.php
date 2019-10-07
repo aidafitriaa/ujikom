@@ -83,7 +83,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">Warna</label>
-                                <input class="form-control" value="{{$mobil->warna}}"type="date" name="warna"disabled>
+                                <input class="form-control" value="{{$mobil->warna}}"type="text" name="warna"disabled>
                             </div>
                             <div class="form-group">
                                 <label for="">Harga Mobil</label>
@@ -96,7 +96,7 @@
                             </div>
                             <div>
                                 <div class="form-group">
-                                    <a href="{{url('/mobil')}}" class="btn btn-outline-info">Kembali</a>
+                                    <a href="{{url('/admin/mobil')}}" class="btn btn-outline-info">Kembali</a>
                                 </div>
                         </form>
                     </div>

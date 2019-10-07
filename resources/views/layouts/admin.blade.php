@@ -35,9 +35,9 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navbar-right-top">
                         <li class="nav-item">
-                            <div id="custom-search" class="top-search-bar">
+                            {{-- <div id="custom-search" class="top-search-bar">
                                 <input class="form-control" type="text" placeholder="Search..">
-                            </div>
+                            </div> --}}
                         
                         <li class="nav-item dropdown nav-user">
                             <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('assets/template/assets/images/avatar-1.jpg')}}" alt="" class="user-avatar-md rounded-circle"></a>
@@ -75,7 +75,7 @@
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
                             <li class="nav-divider">
@@ -135,117 +135,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ============================================================== -->
-                    <!-- end pageheader  -->
-                    <!-- ============================================================== -->
-                    {{-- <div class="ecommerce-widget">
-
-                        
-                            <!-- ============================================================== -->
-                            <!-- end visitor  -->
-                            <!-- ============================================================== -->
-                            <!-- ============================================================== -->
-                            <!-- total orders  -->
-                            <!-- ============================================================== -->
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card border-3 border-top border-top-primary">
-                                    <div class="card-body">
-                                        <h5 class="text-muted">Total Orders</h5>
-                                        <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1">1340</h1>
-                                        </div>
-                                        <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
-                                            <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ============================================================== -->
-                            <!-- end total orders  -->
-                            <!-- ============================================================== -->
-                        </div>
-                        <div class="row">
-                            <!-- ============================================================== -->
-                            <!-- total revenue  -->
-                            <!-- ============================================================== -->
-  
-                            
-                            <!-- ============================================================== -->
-                            <!-- ============================================================== -->
-                            <!-- category revenue  -->
-                            <!-- ============================================================== -->
-                            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <h5 class="card-header">Revenue by Category</h5>
-                                    <div class="card-body">
-                                        <div id="c3chart_category" style="height: 420px;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ============================================================== -->
-                            <!-- end category revenue  -->
-                            <!-- ============================================================== -->
-
-                            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <h5 class="card-header"> Total Revenue</h5>
-                                    <div class="card-body">
-                                        <div id="morris_totalrevenue"></div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <p class="display-7 font-weight-bold"><span class="text-primary d-inline-block">$26,000</span><span class="text-success float-right">+9.45%</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <!-- ============================================================== -->
-                                <!-- social source  -->
-                                <!-- ============================================================== -->
-                                <!-- ============================================================== -->
-                                <!-- end social source  -->
-                                <!-- ============================================================== -->
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <!-- ============================================================== -->
-                                <!-- sales traffice source  -->
-                                <!-- ============================================================== -->
-                            </div>
-                            <!-- ============================================================== -->
-                            <!-- end sales traffice source  -->
-                            <!-- ============================================================== -->
-                            <!-- ============================================================== -->
-                            <!-- sales traffic country source  -->
-                            <!-- ============================================================== -->
-                            
-                            <!-- ============================================================== -->
-                            <!-- end sales traffice country source  -->
-                            <!-- ============================================================== -->
-                        </div>
-                    </div> --}}
+                   
                     @yield('content')
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        {{-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
-                        </div> --}}
-                        {{-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
-                            </div>
-                        </div> --}}
+            
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->

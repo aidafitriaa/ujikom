@@ -99,7 +99,7 @@
                             </div>
                             <div>
                                 <div class="form-group">
-                                    <a href="{{url('/cicilan')}}" class="btn btn-outline-info">Kembali</a>
+                                    <a href="{{url('/admin/cicilan')}}" class="btn btn-outline-info">Kembali</a>
                                 </div>
                             </div>
                         </form>
