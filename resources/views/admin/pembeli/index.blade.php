@@ -22,9 +22,10 @@
                         </a>
                 </center>
                 <div class="card-body">
-                    <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
+                    <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
+                                <th>Id</th>
                                 <th>No.KTP</th>
                                 <th>Nama Pembeli</th>
                                 <th>Alamat Pembeli</th>
@@ -33,8 +34,10 @@
                             </tr>
                         </thead>
                         <tbody>
+                                @php $no = 1;  @endphp
                             @foreach ($pembeli as $data)
                             <tr>
+                                <td>{{$no++}}</td>
                                 <td>{{$data->KTP}}</td>
                                 <td>{{$data->nama_pembeli}}</td>
                                 <td>{{$data->alamat_pembeli}}</td>

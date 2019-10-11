@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{asset('assets/template/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/template/assets/vendor/charts/c3charts/c3.css')}}">
     <link rel="stylesheet" href="{{asset('assets/template/assets/vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
-    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/DataTables/datatables.min.css')}}"/>
+    <title>Dashboard</title>
 </head>
 
 <body>
@@ -43,8 +44,7 @@
                             <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('assets/template/assets/images/avatar-1.jpg')}}" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
-                                    <h5 class="mb-0 text-white nav-user-name">Admin</h5>
-                                    <span class="status"></span><span class="ml-2">Available</span>
+                                        {{ Auth::user()->name }}
                                 </div>
                             
                                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -85,24 +85,56 @@
                                 <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
+                                        @guest
+                                        @else
+                                        @role('admin')
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/admin/mobil">Mobil</a>
+                                        </li>
                                             <li class="nav-item">
-                                                    <a class="nav-link" href="cash">Cash</a>
+                                                    <a class="nav-link" href="/admin/cash">Cash</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="cicilan">Cicilan</a>
+                                                    <a class="nav-link" href="/admin/cicilan">Cicilan</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="kredit">Kredit</a>
+                                                    <a class="nav-link" href="/admin/kredit">Kredit</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="mobil">Mobil</a>
+                                                    <a class="nav-link" href="/admin/paket_kredit">Paket Kredit</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="paket_kredit">Paket Kredit</a>
+                                                    <a class="nav-link" href="/admin/pembeli">Pembeli</a>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="pembeli">Pembeli</a>
-                                                </li>
+                                                @endguest
+                                                @endrole
+
+                                            @guest
+                                            @else
+                                            @role('member')
+                                                    <li class="nav-item">
+                                                            <a class="nav-link" href="/admin/cash">Cash</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="/admin/cicilan">Cicilan</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="/admin/kredit">Kredit</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="/admin/mobil">Mobil</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="/admin/paket_kredit">Paket Kredit</a>
+                                                        </li>
+                                                        {{-- <li class="nav-item">
+                                                            <a class="nav-link" href="pembeli">Pembeli</a>
+                                                        </li> --}}
+                                              @endguest
+                                              @endrole          
+
+
+
                         </ul>
                     </div>
                 </nav>
@@ -142,13 +174,14 @@
             
                     </div>
                 </div>
-            </div> --}}
+            </div>
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
         <!-- end wrapper  -->
+ 
         <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
@@ -175,6 +208,12 @@
     <script src="{{asset('assets/template/assets/vendor/charts/c3charts/d3-5.4.0.min.js')}}"></script>
     <script src="{{asset('assets/template/assets/vendor/charts/c3charts/C3chartjs.js')}}"></script>
     <script src="{{asset('assets/template/assets/libs/js/dashboard-ecommerce.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/DataTables/datatables.min.js')}}"></script>
+    <script>
+      $(document).ready(function() {
+         $('#datatable').DataTable();
+        } );
+    </script>
 </body>
  
 </html>

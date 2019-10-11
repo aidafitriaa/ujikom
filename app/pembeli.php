@@ -11,4 +11,9 @@ class pembeli extends Model
         'KTP','nama_embeli','alamat_pembeli','telp_pembeli'
     ];
     public $timestamps = true;
+
+    public function kredit()
+    {
+        return $this->belongsTo('App\cash','KTP');
+    }
 }
